@@ -1,0 +1,989 @@
+/*Google-fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Poppins:wght@400;600;700&family=Roboto&display=swap');
+
+*{
+font-family: 'Poppins', sans-serif;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+scroll-padding-top: 2rem;
+}
+body{
+    background: red !important;
+}
+header.desk .wrapper{
+    width: 80%;
+    max-width: 1476px;
+    margin: 0 auto;
+}
+header.desk nav{
+    background:#4285F4;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+header.desk nav .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid white; */
+    padding: 20px 0;
+}
+header.desk nav .flex .logo h2{
+    font-size: 2.2em;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+    /* border: 1px solid black; */
+}
+header.desk nav .flex ul {
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+}
+header.desk nav .flex ul li+li{
+    margin-left: 30px;
+}
+header.desk nav .flex ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    /* opacity: 0.7; */
+}
+header.desk .flex ul li{
+position: relative;
+}
+header.desk .flex ul li::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: whitesmoke;
+    bottom: 0;
+    left: 0;
+    transition: all;
+    transition-duration: 500ms;
+}
+header.desk .flex ul li:hover::after{
+    width: 100%;
+}
+header.mobile{
+    display: none;
+}
+
+/* header .navbar{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:100;
+}
+header .title{
+    font-size: 26px;
+}
+header li a{
+        position: relative;
+        cursor: pointer;
+}
+header li a::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 8px;
+    bottom: -2px;
+    width: 0%;
+    height: 4px;
+    background-color: whitesmoke;
+    transition: all;
+    transition-duration: 600ms;
+}
+header li a:hover::before{
+    width: 50%;
+} */
+/*Hero-sec-Start*/
+.Hero-sec{
+    background-color: whitesmoke;
+    padding-top: 180px;
+}
+.Hero-sec .wrapper{
+    width:90%;
+    max-width: 1476px;
+    margin: 0 auto;
+}
+.Hero-sec .jumbo1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+.Hero-sec .jumbo1 .image{
+    width:450px;
+    margin:20px 50px;
+}
+.Hero-sec .jumbo1 .image img{
+    width: 100%;
+    height: 460px;
+}
+.Hero-sec .jumbo1 .content1 > h1{
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-size: 3.5em;
+}
+.Hero-sec .jumbo1 .lead{
+    font-size: 28px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.Hero-sec .jumbo1 .lead span{
+    border-bottom: 2px solid blue;
+}
+.Hero-sec .jumbo1 .lead #auto-type{
+    color:blue;
+}
+.Hero-sec .links{
+    font-size: 1.3em;
+}
+.Hero-sec .links ul{
+    list-style: none;
+    display: flex;
+}
+.Hero-sec .links ul li a{
+    text-decoration: none;
+}
+.Hero-sec .links ul li+li{
+    margin-left: 30px;
+}
+.Hero-sec .links i{
+    padding: 0.4em;
+    border-radius: 100%;
+    transition: all;
+    transition-duration: 500ms;
+    color:blueviolet;
+}
+.Hero-sec .links i:hover{
+    background-color: blue;
+    color: white;
+}
+/*Hero-sec-End*/
+
+/*about-Start*/
+.about{
+    background-color: whitesmoke;
+    padding: 5em 0;
+}
+.about .wrapper{
+    width:90%;
+    max-width: 1476px;
+    margin: 0 auto;
+}
+.about h2{
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block
+}
+.about h2::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: blue;
+    bottom: 0;
+    left: 225px;
+}
+.about .jumbo2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.about .jumbo2 .content1{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding-right: 100px;
+    width:600px;
+}
+.about .jumbo2 .content1 > p{
+    width:310px;
+    font-size: 1.1em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+.about .jumbo2 .content1 ul{
+    margin-top: 20px;
+}
+.about .jumbo2 .content1 ul li{
+    list-style: none;
+}
+.about .jumbo2 .content1 ul li span:first-child{
+    font-size: 1em;
+    font-weight: 700;
+}
+.about .jumbo2 .content1 ul li span:last-child{
+    opacity: 0.8;
+}
+.about .jumbo2 .content1 ul li{
+    margin-bottom: 1.4em;
+    font-size: 1.2em;
+}
+.about .image{
+    width:450px;
+    height: 500px;
+}
+.about .image img{
+    width: 100%;
+    height: inherit;
+}
+/*about-End*/
+
+.skills {
+    background-color: whitesmoke;
+    padding: 5em 0;
+}
+.skills .wrapper{
+    width:90%;
+    max-width: 1476px;
+    margin: 0 auto;
+}
+.skills h2{
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block
+}
+.skills h2::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: blue;
+    bottom: 0;
+    left: 125px;
+}
+.skills .jumbo3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.skills .jumbo3 .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills .jumbo3 .jumbos .box h4{
+    text-align: left;
+    /* border: 2px solid black; */
+    width: 200px;
+    margin-bottom: 3em;
+    font-weight: 600;
+    opacity: 0.6;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.skills .jumbo3 .jumbos .box img{
+    width:90px;
+    height: 90px;
+    margin-bottom: 3.8em;
+}
+
+/*skills-End*/
+
+/*Education-Start*/
+
+.education{
+    background-color:whitesmoke;
+    padding: 5em 0;
+}
+.education .wrapper{
+    width: 80%;
+    /* border: 2px solid black; */
+    max-width: 1476px;
+    margin: 0 auto;
+}
+.education .edu-title {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.education .edu-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid rgb(214, 60, 60);
+    position: relative;
+}
+.education .edu-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background-color: blue;
+    border: 2px solid blue;
+}
+.education .edu-item h4 {
+    line-height: 18px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: blue;
+    margin-bottom: 10px;
+}
+.education .edu-item h5 {
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.education .edu-item p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.education .edu-item ul {
+    padding-left: 20px;
+}
+.education .edu-item ul li {
+    padding-bottom: 10px;
+}
+
+/*education-End*/
+
+/*Portfolio-Start*/
+
+.portfolio{
+    background-color: whitesmoke;
+    padding: 5em 0;
+}
+.portfolio .wrapper{
+    width: 80%;
+    max-width: 1476px;
+    margin: 0 auto;
+}
+.portfolio-title h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 0;
+    margin: 20px 0;
+    line-height: 1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #7a5252;
+    font-family: "Poppins", sans-serif;
+}
+.portfolio-title h3::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    display: inline-block;
+    background: blue;
+}
+.portfolio .wrapper .portfolio-title h2{
+    font-size: 2.5em;
+    font-weight: 700;
+    position: relative;
+}
+.portfolio .wrapper .portfolio-title h2::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 1px;
+    left:200px;
+    bottom: 0;
+    background-color: blue;
+}
+.portfolio .jumbo4 .jumbos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0;
+}
+.portfolio .jumbo4 .image{
+    width:370px;
+    height: 240px;
+}
+.portfolio .jumbo4 .image img{
+    width: 100%;
+    height: inherit;
+    border-radius: 5px;
+}
+
+/*portfolio-End*/
+
+
+
+/*Contact*/
+
+.contact{
+    padding: 5em 0;
+    background-color: whitesmoke;
+}
+.contact .wrapper{
+    width: 80%;
+    max-width: 1476px;
+    margin: 0 auto;
+}
+.contact-title h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-top: 15px;
+    line-height: 1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #7a5252;
+    font-family: "Poppins", sans-serif;
+}
+.contact-title h3::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: blue;
+    margin: 4px 10px;
+}
+.contact-title h2 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: black;
+}
+.contact .wrapper .contact-title h2::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 2px;
+    left:260px;
+    bottom: 0;
+    background-color: blue;
+}
+.contact .jumbo5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .jumbo5 .jumbos{
+    width: 500px;
+    height:130px;
+    margin: 10px 10px;
+    padding: 10px;
+    background:#a1a6f5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact .jumbo5 .jumbos i.bx{
+    font-size: 20px;
+    color: black;
+    border-radius: 100%;
+    padding: 12px;
+    /* float: left; */
+    background: white;;
+}
+.contact .jumbo5 .jumbos h3 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color:black;
+    font-weight: 700;
+    margin-bottom: 10px;
+    /* margin: 10px 0 8px 68px; */
+}
+.contact .jumbo5 .jumbos p {
+    padding: 0;
+    margin: 0;
+    color:whitesmoke;
+    line-height: 24px;
+    font-size: 14px;
+    /* margin: 0 0 0 68px; */
+}
+.contact .jumbo5 .jumbos .fl1{
+    margin-left: 30px;
+}
+.contact .jumbo5 .jumbos .fl1 p a{
+    color: whitesmoke;
+}
+.contact .jumbo5 .jumbos .fl1 p a:hover{
+    color: black;
+}
+
+.contact .jumbo5 .jumbos .fl1 .social-links a{
+    margin-right: 20px;
+    transition: all;
+    transition-duration: 400ms;
+    color: whitesmoke;
+}
+.contact .jumbo5 .jumbos .fl1 .social-links a:hover{
+    color: black;
+}
+.contact .jumbo6{
+    display: flex;
+    justify-content: center;
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+}
+.contact .jumbo6 .jumbos{
+    width: 500px;
+    margin: 10px 10px;
+}
+.contact .jumbo7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact .jumbo7 .jumbos{
+    width: 1020px;
+    margin-bottom: 10px;
+}
+.contact .jumbo7 button[type=submit] {
+    background: rgb(177, 104, 228);
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+} 
+/* .contact .contact-box {
+    color:black;
+    padding: 20px;
+    width: 100%;
+    background: rgb(177, 104, 228);
+}
+.contact .contact-box i.bx {
+    font-size: 24px;
+    color: black;
+    border-radius: 50%;
+    padding: 14px;
+    float: left;
+    background: white;
+}
+.contact .contact-box h3 {
+    font-size: 20px;
+    color:black;
+    font-weight: 700;
+    margin: 10px 0 8px 68px;
+}
+.contact .contact-box p {
+    padding: 0;
+    color:blue;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 0 0 68px;
+}
+.contact .contact-box p a {
+    color:rgb(10, 10, 85);
+}
+.contact .contact-box .social-links {
+    margin: 5px 0 0 68px;
+    display: flex;
+}
+.contact .contact-box .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    color: rgb(4, 4, 111);
+    line-height: 1;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+.contact .contact-box .social-links a:hover {
+    color: whitesmoke;
+}
+.contact .contact-box a {
+    text-decoration: none;
+}
+.contact .design input {
+    padding: 10px 15px;
+}
+
+.contact .design input, .contact .design textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    background: lightgrey;
+    border: 0;
+    transition: 0.3s;
+    color:black;
+}
+.contact .design button[type=submit] {
+    background: rgb(177, 104, 228);
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+} */
+
+/*Footer*/
+footer .wrapper {
+    width: 80%;
+    max-width: 1476px;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 2em 0;
+    position: relative;
+    background: #000000;
+
+}
+footer .foot-side h2 {
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 22px;
+    font-weight: 600;
+}
+footer p {
+    color: rgba(255, 255, 255, 0.7);
+}
+footer .foot-side ul li {
+    margin-bottom: 10px;
+}
+
+.foot-social li {
+    list-style: none;
+    margin: 0 10px 0 0;
+    display: inline-block;
+}
+footer .foot-side ul li a {
+    color: rgba(255, 255, 255, 0.6);
+}
+.foot-social .social-links a {
+    font-size: 25px;
+}
+.foot-social .social-links a i {
+    height: 50px;
+    width: 50px;
+    display: block;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    margin: 0 10px;
+}
+footer .foot-side ul li {
+    margin-bottom: 10px;
+}
+.foot-heading-2 {
+    padding-left: 50px;
+}
+.addr ul li .icon {
+    width: 40px;
+    font-size: 18px;
+    /* padding-top: 2px; */
+    color: white;
+}
+.addr ul li .icon i{
+    color: white;
+}
+.addr ul {
+    list-style: none;
+    padding-left: 50px;
+}
+.addr ul li .icon, .addr ul li .text {
+    display: table-cell;
+    vertical-align: top;
+    color: rgb(216, 189, 189);
+} 
+.navbar-brand span {
+    color: #fff;
+} 
+
+
+
+/*Media*/
+@media screen and (max-width:500px){
+
+/*Header-Start*/
+header.desk{
+    display: none;
+}
+
+header.mobile{
+    display: block;
+}
+header.mobile .wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+header.mobile nav{
+background:#4285F4;
+width: 100%;
+position: fixed;
+z-index: 1;
+padding: 15px 0;
+}
+.mobile nav .flexes ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   list-style-type: none;
+   /* border: 1px solid red; */
+   margin: 0;
+}
+.mobile nav .flexes ul li+li{
+    margin-left: 15px;
+}
+
+.mobile nav .flexes ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.mobile nav .flexes ul li a i{
+    padding: 0.5em;
+    font-size: 1.2em;
+    border-radius: 100%;
+    transition: all;
+    transition-duration: 600ms;
+}
+.mobile nav .flexes ul li a i:hover{
+    color:whitesmoke;
+    background:black;
+}
+
+
+/*Header-End*/
+
+
+/*Hero-sec-Start*/
+
+.Hero-sec{
+    padding-top: 120px;
+}
+.Hero-sec .wrapper{
+    width:90%;
+    margin: 0 auto;
+}
+.Hero-sec .jumbo1{
+    flex-direction: column;
+    /* height: 100vh; */
+}
+.Hero-sec .jumbo1 .image{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+}
+.Hero-sec .jumbo1 .image img{
+    width: 100%;
+    height: inherit;
+}
+
+.Hero-sec .jumbo1 .content1 > h1{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    /* border: 1px solid black; */
+}
+.Hero-sec .jumbo1 .lead{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.Hero-sec .links ul{
+    justify-content: center;
+}
+/*Hero-sec-End*/
+
+/*about-Start*/
+.about{
+    padding: 3em 0;
+}
+.about h2{
+    font-size: 2.3em;
+}
+.about .wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.about h2::after{
+    left:160px;
+    width:120px;
+    height: 2px;
+}
+.about .jumbo2 .content1{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+    width: 320px;
+}
+.about .jumbo2 .content1 > p{
+    font-size: 1em;
+}
+.about .jumbo2 .content1 ul li{
+    font-size: 1.2em;
+}
+.about .jumbo2 .content1 ul li span:first-child{
+    font-size: 1em;
+}
+.about .image{
+    display: none;
+}
+
+/*about-End*/
+  
+/*skills-Start*/
+
+.skills{
+    padding: 3em 0;
+}
+.skills .wrapper{
+    width:90%;
+    margin:0 auto;
+}
+.skills h2{
+    font-size: 2.3em;
+}
+.skills h2::after{
+    width: 120px;
+    left: 95px;
+}
+.skills .jumbo3{
+    flex-direction: column;
+    align-items: center;
+}
+.skills .jumbo3 .jumbos .box img{
+    width:60px;
+    height: 60px;
+}
+
+/*skills-End*/
+
+/*Education-Start*/
+
+.education{
+    padding: 3em 0;
+}
+.education .wrapper{
+    width:90%;
+    margin: 0 auto;
+}
+.education .edu-title {
+    font-size: 2.3em;
+    margin-bottom: 15px;
+}
+.education .row .col-lg-6:last-child{
+    margin-top: 25px;
+}
+
+/*Education-End*/
+
+/*Portfolio-Start*/
+
+.portfolio{
+    padding: 3em 0;
+}
+.portfolio .wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.portfolio .portfolio-title{
+    margin-bottom: 35px;
+}
+.portfolio .portfolio-title h2 {
+    font-size: 2.3em;
+}
+.portfolio .wrapper .portfolio-title h2::after{
+    width: 95px;
+    left:200px;
+}
+.portfolio .jumbo4 .jumbos{
+flex-direction: column;
+margin: 0 0;
+}
+.portfolio .jumbo4 .image{
+    width: 300px;
+    height: 220px;
+    margin-bottom: 20px;
+}
+.portfolio .jumbo4 .image img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Portfolio-End*/
+
+/*Contact-Start*/
+
+.contact{
+    padding: 3em 0;
+}
+.contact .wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.contact .contact-title h2 {
+    font-size: 2em;
+}
+.contact .wrapper .contact-title h2::after{
+    width: 90px;
+    left:215px;
+}
+.contact .jumbo5{
+    flex-direction: column;
+    /* justify-content: center; */
+    /* overflow: hidden; */
+}
+.contact .jumbo5 .jumbos{
+    width: 320px;
+    padding: 0 3px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.contact .jumbo6{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact .jumbo6 .jumbos{
+    width: 320px;
+}
+.contact .jumbo7 .jumbos{
+    width: 320px;
+}
+
+/*Contact-End*/
+
+/*Footer-Start*/
+
+footer .wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+.foot-heading-2 {
+    padding-left: 0;
+}
+.foot-social .social-links a i {
+    margin-bottom: 30px;
+}
+.addr ul {
+    padding-left: 0;
+}
+
+/*Footer-End*/
+
+}
